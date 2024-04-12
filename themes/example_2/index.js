@@ -122,7 +122,7 @@ const LayoutBase = props => {
  * @param {*} props
  * @returns 此主题首页就是列表
  */
-const LayoutIndex = ()⇒ <></>
+const LayoutIndex = () => <></>
 
 /**
  * 文章列表
