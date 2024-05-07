@@ -99,8 +99,8 @@ const LayoutBase = props => {
                         </Transition>
                     </div>
 
-//                    {/* 侧边栏 */}
-//                    {!fullWidth && <SideBar {...props} />}
+                    {/* 侧边栏 */}
+                    {/* !fullWidth && <SideBar {...props} />*/}
 
                 </div>
 
