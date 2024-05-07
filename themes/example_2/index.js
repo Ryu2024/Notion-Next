@@ -26,6 +26,7 @@ import { useRouter } from 'next/router'
 import { Transition } from '@headlessui/react'
 import { Style } from './style'
 import { siteConfig } from '@/lib/config'
+import LazyImage from '@/components/LazyImage'
 
 /**
  * 基础布局框架
@@ -122,7 +123,17 @@ const LayoutBase = props => {
  * @param {*} props
  * @returns 此主题首页就是列表
  */
-const LayoutIndex = () => <></>
+const LayoutIndex = () => (
+  <>
+    <LazyImage
+      priority={true}
+      id='header-cover'
+      src={siteInfo?.pageCover}
+      className="header-cover object-center w-full h-screen object-cover"
+    />
+    {/* 其他内容 */}
+  </>
+)
 
 /**
  * 文章列表
