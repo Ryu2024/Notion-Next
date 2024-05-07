@@ -6,7 +6,7 @@ import { Header } from './components/Header'
 import { Nav } from './components/Nav'
 import { Footer } from './components/Footer'
 import { Title } from './components/Title'
-import { SideBar } from './components/SideBar'
+//import { SideBar } from './components/SideBar'
 import { BlogListPage } from './components/BlogListPage'
 import { BlogListScroll } from './components/BlogListScroll'
 import { useGlobal } from '@/lib/global'
@@ -99,8 +99,8 @@ const LayoutBase = props => {
                         </Transition>
                     </div>
 
-                    {/* 侧边栏 */}
-                    {!fullWidth && <SideBar {...props} />}
+//                    {/* 侧边栏 */}
+//                    {!fullWidth && <SideBar {...props} />}
 
                 </div>
 
@@ -153,7 +153,7 @@ const LayoutSlug = props => {
           const article = document.getElementById('notion-article')
           if (!article) {
             router.push('/404').then(() => {
-              console.warn('找不到页面', router.asPath)
+              console.warn('404', router.asPath)
             })
           }
         }
