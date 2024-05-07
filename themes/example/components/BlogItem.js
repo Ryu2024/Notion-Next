@@ -52,8 +52,7 @@ const BlogItem = ({ post }) => {
               </Link>
             </>
           )}
-          {/* <span className="font-bold mx-1"> | </span> */}
-          {/* <a href="#" className="text-gray-700">2 Comments</a> */}
+
         </div>
          */}
 
