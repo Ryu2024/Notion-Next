@@ -14,6 +14,6 @@ export const Title = (props) => {
         <h1 className="text-xl md:text-4xl pb-4"><NotionIcon icon={post?.pageIcon} />{title}</h1>
         //<p className="leading-loose text-gray-dark">
             //{description}
-        </p>
+        //</p>
     </div>
 }
