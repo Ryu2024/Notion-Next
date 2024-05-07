@@ -123,17 +123,9 @@ const LayoutBase = props => {
  * @param {*} props
  * @returns 此主题首页就是列表
  */
-const LayoutIndex = () => (
-  <>
-    <LazyImage
-      priority={true}
-      id='header-cover'
-      src={siteInfo?.pageCover}
-      className="header-cover object-center w-full h-screen object-cover"
-    />
-    {/* 其他内容 */}
-  </>
-)
+const LayoutIndex = props => {
+  return null />
+}
 
 /**
  * 文章列表
