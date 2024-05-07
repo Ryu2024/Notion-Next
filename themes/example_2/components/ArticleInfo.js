@@ -8,6 +8,9 @@ export const ArticleInfo = (props) => {
   const { locale } = useGlobal()
 
   return (
-	  
+	  <section className="flex-wrap flex mt-2 text-gray-400 dark:text-gray-400 font-light leading-8">
+		<div>
+		</div>
+	  </section>	  
   )
 }
