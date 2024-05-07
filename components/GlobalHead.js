@@ -210,7 +210,7 @@ const getSEOMeta = (props, router, global) => {
       }
     case '/404':
       return {
-        title: `${siteInfo?.title} | 页面找不到啦`,
+        title: `${siteInfo?.title} | 404`,
         image: `${siteInfo?.pageCover}`
       }
     case '/tag':
