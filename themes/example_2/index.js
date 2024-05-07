@@ -124,7 +124,7 @@ const LayoutBase = props => {
  * @returns 此主题首页就是列表
  */
 const LayoutIndex = props => {
-  return null />
+  return null
 }
 
 /**
