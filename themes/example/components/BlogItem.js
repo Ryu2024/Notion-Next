@@ -35,25 +35,7 @@ const BlogItem = ({ post }) => {
         </h2>
 
         <div className='mb-4 text-sm text-gray-700 dark:text-gray-300'>
-          by{' '}
-          <a href='#' className='text-gray-700 dark:text-gray-300'>
-            {siteConfig('AUTHOR')}
-          </a>{' '}
-          on {post.date?.start_date || post.createdTime}
-          <TwikooCommentCount post={post} className='pl-1' />
-          {post.category && (
-            <>
-              <span className='font-bold mx-1'> | </span>
-              <Link
-                href={`/category/${post.category}`}
-                className='text-gray-700 dark:text-gray-300 hover:underline'>
-                {post.category}
-              </Link>
-            </>
-          )}
-          {/* <span className="font-bold mx-1"> | </span> */}
-          {/* <a href="#" className="text-gray-700">2 Comments</a> */}
-        </div>
+
 
         {!post.results && (
           <p className='line-clamp-3 text-gray-700 dark:text-gray-400 leading-normal'>
