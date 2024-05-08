@@ -82,7 +82,7 @@ const LayoutBase = props => {
                 <div id='container-wrapper' className={(JSON.parse(siteConfig('LAYOUT_SIDEBAR_REVERSE')) ? 'flex-row-reverse' : '') + 'relative container mx-auto justify-center md:flex items-start py-8 px-2'}>
 
                     {/* 内容 */}
-                    <div className={`w-full ${fullWidth ? '' : 'max-w-4xl'} xl:px-8 lg:px-4`}>
+                    <div className={`w-full ${fullWidth ? '' : 'max-w-4xl'} xl:px-16 lg:px-10`} style={{ maxWidth: "calc(4xl + 10px)" }}>
                         <Transition
                             show={!onLoading}
                             appear={true}
