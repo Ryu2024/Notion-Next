@@ -76,8 +76,8 @@ const LayoutBase = props => {
       <div id='container-inner' className='w-full relative z-10'>
         {/* 标题栏 */}
         {!fullWidth && (
-          <div className='text-center px-6 py-6 mb-3 bg-gray-100 dark:bg-hexo-black-gray dark:border-hexo-black-gray border-b'>
-            <h1 className='text-xl md:text-2xl'>
+          <div className='text-center px-6 py-3 mb-3 bg-gray-100 dark:bg-hexo-black-gray dark:border-hexo-black-gray border-b'>
+            <h1 className='text-xm md:text-xl'>
               {siteConfig('POST_TITLE_ICON') && (
                 <NotionIcon icon={post?.pageIcon} />
               )}
@@ -97,7 +97,7 @@ const LayoutBase = props => {
           }>
           {/* 内容 */}
           <div
-            className={`w-full ${fullWidth ? '' : 'max-w-3xl'} xl:px-14 lg:px-4`}>
+            className={`w-full ${fullWidth ? '' : 'max-w-5xl'} xl:px-14 lg:px-4`}>
             <Transition
               show={!onLoading}
               appear={true}
@@ -115,7 +115,7 @@ const LayoutBase = props => {
           </div>
 
           {/* 侧边栏 */}
-          {!fullWidth && <SideBar {...props} />}
+          {/* {!fullWidth && <SideBar {...props} />}*/}
         </div>
       </div>
 
