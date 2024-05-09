@@ -141,7 +141,11 @@ const LayoutBase = props => {
  * @returns 此主题首页就是列表
  */
 const LayoutIndex = props => {
-  return <LayoutPostList {...props} />
+  return (
+    <div style={{ height: '100vh', backgroundColor: 'transparent' }}>
+      {/* 这里可以放置其他内容 */}
+    </div>
+  )
 }
 
 /**
