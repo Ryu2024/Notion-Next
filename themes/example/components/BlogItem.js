@@ -28,6 +28,9 @@ const BlogItem = ({ post }) => {
             )}
             {post?.title}
           </Link>
+          <time className='flex-shrink-0 text-gray-100 dark:text-gray-100'>
+            {post?.publishDay}
+          </time>
         </h2>
 
          {/* 
