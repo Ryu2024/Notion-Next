@@ -19,19 +19,19 @@ const BlogItem = ({ post }) => {
     <article
       className={`${showPageCover ? 'flex md:flex-row flex-col-reverse' : ''} replace mb-12 `}>
       <div className={`${showPageCover ? 'md:w-7/12' : ''}`}>
-        <h2 className='mb-4'>
-          <Link
-            href={post?.href}
-            className='text-black dark:text-gray-100 text-xl md:text-2xl no-underline hover:underline'>
-            {siteConfig('POST_TITLE_ICON') && (
-              <NotionIcon icon={post.pageIcon} />
-            )}
-            {post?.title}
-          </Link>
-          <time className='flex-shrink-0 text-gray-100 dark:text-gray-100'>
-            {post?.publishDay}
-          </time>
-        </h2>
+      <h2 className='mb-4 flex justify-between'>
+        <Link
+          href={post?.href}
+          className='text-black dark:text-gray-100 text-xl md:text-2xl no-underline hover:underline'>
+          {siteConfig('POST_TITLE_ICON') && (
+            <NotionIcon icon={post.pageIcon} />
+          )}
+          {post?.title}
+        </Link>
+        <time className='text-gray-100 dark:text-gray-100'>
+          {post?.publishDay}
+        </time>
+      </h2>
 
          {/* 
         <div className='mb-4 text-sm text-gray-700 dark:text-gray-300'>
@@ -72,7 +72,7 @@ const BlogItem = ({ post }) => {
         )}
       </div>
       {/* 图片封面 */}
-      {showPageCover && (
+      {/*{showPageCover && (
         <div className='md:w-5/12 w-full h-44 overflow-hidden p-1'>
           <Link href={post?.href} passHref legacyBehavior>
             <LazyImage
@@ -81,7 +81,7 @@ const BlogItem = ({ post }) => {
             />
           </Link>
         </div>
-      )}
+      )}*/}
     </article>
   )
 }
