@@ -7,7 +7,7 @@ export const Footer = (props) => {
   const since = siteConfig('SINCE')
   const copyrightDate = parseInt(since) < currentYear ? since + '-' + currentYear : currentYear
 
-  return <footer className="z-10 relative w-full bg-white px-6 border-t dark:border-hexo-black-gray dark:bg-hexo-black-gray ">
+  return <footer className="z-10 relative w-full bg-white px-6 border-t dark:border-hexo-black-gray dark:bg-[#000044] ">
       
 <DarkModeButton className='text-center pt-4'/>
 
@@ -28,7 +28,7 @@ export const Footer = (props) => {
     {/* <span className='dark:text-gray-200 no-underline ml-4'>
       Powered by
       <a
-        href="https://github.com/tangly1024/NotionNext"
+        href=""
         className=' hover:underline'
       >
         NotionNext {siteConfig('VERSION')}{' '}
