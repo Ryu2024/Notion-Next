@@ -19,7 +19,7 @@ const BlogItem = ({ post }) => {
     <article
       //className={`${showPageCover ? 'flex md:flex-row flex-col-reverse' : ''} replace mb-12 `}>
       className={` replace mb-6 `}>
-      <div className={`${showPageCover ? 'md:w-7/12' : ''}`}>
+      //<div className={`${showPageCover ? 'md:w-7/12' : ''}`}>
       <h2 className='mb-4 flex justify-between'>
         <Link
           href={post?.href}
