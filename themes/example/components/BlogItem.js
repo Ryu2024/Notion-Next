@@ -28,7 +28,7 @@ const BlogItem = ({ post }) => {
           )}
           {post?.title}
         </Link>
-        <time className='text-gray-100 dark:text-gray-100'>
+        <time className='text-gray-100 dark:text-gray-100 flex-grow text-right'>
           {post?.publishDay}
         </time>
       </h2>
