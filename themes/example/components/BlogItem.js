@@ -17,18 +17,19 @@ const BlogItem = ({ post }) => {
 
   return (
     <article
-      className={`${showPageCover ? 'flex md:flex-row flex-col-reverse' : ''} replace mb-12 `}>
+      //className={`${showPageCover ? 'flex md:flex-row flex-col-reverse' : ''} replace mb-12 `}>
+      className={` replace mb-6 `}>
       <div className={`${showPageCover ? 'md:w-7/12' : ''}`}>
       <h2 className='mb-4 flex justify-between'>
         <Link
           href={post?.href}
-          className='text-black dark:text-gray-100 text-xl md:text-2xl no-underline hover:underline'>
+          className='text-black dark:text-gray-100 text-xl md:text-xl no-underline hover:underline'>
           {siteConfig('POST_TITLE_ICON') && (
             <NotionIcon icon={post.pageIcon} />
           )}
           {post?.title}
         </Link>
-        <time className='text-gray-100 dark:text-gray-100 flex-grow text-right'>
+        <time className='flex-shrink-0 text-gray-100 dark:text-gray-100 flex-grow text-right'>
           {post?.publishDay}
         </time>
       </h2>
@@ -58,7 +59,7 @@ const BlogItem = ({ post }) => {
 
 
         {!post.results && (
-          <p className='line-clamp-3 text-gray-700 dark:text-gray-400 leading-normal'>
+          <p className='line-clamp-3 text-sm text-gray-700 dark:text-gray-400 leading-normal'>
             {post.summary}
           </p>
         )}
