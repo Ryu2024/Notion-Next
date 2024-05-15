@@ -24,13 +24,13 @@ const BlogItem = ({ post }) => {
       <h2 className='mb-4 flex justify-between'>
         <Link
           href={post?.href}
-          className='text-black dark:text-gray-100 text-xl md:text-xl no-underline hover:underline'>
+          className='text-black dark:text-gray-100 text-md md:text-xl no-underline hover:underline'>
           {siteConfig('POST_TITLE_ICON') && (
             <NotionIcon icon={post.pageIcon} />
           )}
           {post?.title}
         </Link>
-        <time className='flex-shrink-0 text-gray-100 dark:text-gray-100 flex-grow text-right'>
+        <time className='flex-shrink-0 text-md md:text-xl text-gray-100 dark:text-gray-100 flex-grow text-right'>
           {post?.publishDay}
         </time>
       </h2>
