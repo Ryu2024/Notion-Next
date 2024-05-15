@@ -74,8 +74,9 @@ const LayoutBase = props => {
 
       {/* 主体 */}
       <div id='container-inner' className='w-full relative z-10'>
-        {/* 标题栏 */}
-        {!fullWidth && (
+      
+       {/* 标题栏 */}
+        {/* {!fullWidth && (
           <div className='text-center px-6 py-3 mb-3 bg-gray-100 dark:bg-[#000044] dark:border-hexo-black-gray border-b'>
             <h1 className='text-xm md:text-xl'>
               {siteConfig('POST_TITLE_ICON') && (
@@ -85,7 +86,7 @@ const LayoutBase = props => {
             </h1>
             {/* <p className='leading-loose text-gray-dark'>{description}</p>*/}
           </div>
-        )}
+        )} */}
 
         <div
           id='container-wrapper'
