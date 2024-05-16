@@ -32,7 +32,7 @@ module.exports = {
           DEFAULT: BLOG.BACKGROUND_LIGHT || '#ffffff'
         },
         night: {
-          DEFAULT: BLOG.BACKGROUND_DARK || '#0319A8'
+          DEFAULT: BLOG.BACKGROUND_DARK || '#000044'
         },
         hexo: {
           'background-gray': '#f5f5f5',
