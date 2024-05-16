@@ -11,7 +11,7 @@ import BlogItem from './BlogItem'
  */
 export const BlogListPage = props => {
   const { page = 1, posts, postCount } = props
-  const { locale} = useGlobal()
+  const { locale, NOTION_CONFIG } = useGlobal()
   const router = useRouter()
   const totalPage = Math.ceil(
     postCount / siteConfig('POSTS_PER_PAGE', 12, NOTION_CONFIG)
