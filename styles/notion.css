@@ -542,10 +542,10 @@ summary > .notion-h {
   width: 100%;
   white-space: pre-wrap;
   word-break: break-word;
-  border-left: 3px solid currentcolor;
+  border-left: 2px solid currentcolor;
   padding: 0.2em 0.9em;
   margin: 6px 0;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .notion-hr {
@@ -927,7 +927,7 @@ code[class*='language-'] {
   padding: 16px 16px 16px 12px;
   display: inline-flex;
   width: 100%;
-  border-radius: 3px;
+  border-radius: 0px;
   border-width: 1px;
   align-items: center;
   box-sizing: border-box;
@@ -1962,7 +1962,7 @@ svg + .notion-page-title-text {
 /* https://github.com/kchen0x */
 .notion-quote {
   display: block;
-  border-radius: 5px;
+  border-radius: 0px;
   border-color: var(--notion-blue);
   border-left-color: var(--notion-blue);
   background-color: var(--notion-blue_background_co);
