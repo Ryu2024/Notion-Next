@@ -98,7 +98,7 @@ const LayoutBase = props => {
           }>
           {/* 内容 */}
           <div
-            className={`w-full ${fullWidth ? '' : 'max-w-5xl'} xl:px-2 lg:px-2`}>
+            className={`w-full ${fullWidth ? '' : 'max-w-4xl'} xl:px-2 lg:px-4`}>
             <Transition
               show={!onLoading}
               appear={true}
