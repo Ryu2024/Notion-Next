@@ -122,7 +122,41 @@ const LayoutBase = props => {
 
       {/* 页脚 */}
       <Footer {...props} />
-
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document Height</title>
+        <style>
+          #height-display {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+          }
+        </style>
+      </head>
+      <body>
+        <div id="height-display"></div>
+      
+        <script>
+          function updateHeight() {
+            const heightDisplay = document.getElementById('height-display');
+            const documentHeight = document.documentElement.scrollHeight;
+            heightDisplay.textContent = `Document Height: ${documentHeight}px`;
+          }
+      
+          // Update the height display on page load
+          window.addEventListener('load', updateHeight);
+      
+          // Update the height display when the window is resized
+          window.addEventListener('resize', updateHeight);
+        </script>
+      </body>
+      </html>
       {/* 回顶按钮 */}
       <div className='fixed right-4 bottom-4 z-10'>
         <div
