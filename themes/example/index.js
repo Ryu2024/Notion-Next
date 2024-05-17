@@ -74,7 +74,7 @@ const LayoutBase = props => {
 
       {/* 主体 */}
       <div id='container-inner' className='w-full relative z-10'>
-      
+      <div style={{ height: '2em' }}></div>
        {/* 标题栏 */}
        {/*{!fullWidth && (
          <div className='text-center px-6 py-3 mb-3 bg-gray-100 dark:bg-[#000044] dark:border-hexo-black-gray border-b'>
