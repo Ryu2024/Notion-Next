@@ -30,7 +30,7 @@ const BlogItem = ({ post }) => {
           )}
           {post?.title}
         </Link>
-        <time className='flex-shrink-0 text-sm md:text-md text-gray-100 dark:text-gray-400 flex-grow text-right'>
+        <time className='flex-shrink-0 text-xs md:text-sm text-gray-100 dark:text-gray-400 flex-grow text-right align-baseline'>
           {post?.publishDay}
         </time>
       </h2>
